@@ -5,7 +5,7 @@ import {SafeAreaView} from "react-native-safe-area-context";
 const Welcome = () => {
     return (
         <SafeAreaView>
-            <Text>Welcome</Text>
+            <Text className=' text-4xl'>Welcome</Text>
         </SafeAreaView>
     );
 };

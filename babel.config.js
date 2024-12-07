@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-module.exports = function (api: { cache: (arg0: boolean) => void; }) {
+module.exports = function (api) {
     api.cache(true);
     return {
       presets: [
