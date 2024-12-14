@@ -52,7 +52,7 @@ const CustomButton = ({
     >
       {IconLeft && <IconLeft />}
       <Text
-        className={`font-bold text-2xl ${getTextVariantStyle(textVariant)}`}
+        className={`font-semibold text-lg ${getTextVariantStyle(textVariant)}`}
       >
         {title}
       </Text>
