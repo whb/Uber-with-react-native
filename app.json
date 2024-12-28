@@ -15,7 +15,21 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "unstable_reactLegacyComponentNames": [
+        "AIRMap",
+        "AIRMapCallout",
+        "AIRMapCalloutSubview",
+        "AIRMapCircle",
+        "AIRMapHeatmap",
+        "AIRMapLocalTile",
+        "AIRMapMarker",
+        "AIRMapOverlay",
+        "AIRMapPolygon",
+        "AIRMapPolyline",
+        "AIRMapUrlTile",
+        "AIRMapWMSTile"
+      ]      
     },
     "web": {
       "bundler": "metro",

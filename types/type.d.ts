@@ -47,6 +47,7 @@ declare interface Ride {
   user_email: string;
   created_at: string;
   driver: {
+    driver_id: any;
     first_name: string;
     last_name: string;
     car_seats: number;
