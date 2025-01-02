@@ -18,6 +18,7 @@ import { icons, images } from "@/constants";
 import React from "react";
 import { Ride } from "@/types/type";
 import { useLocationStore } from "@/store";
+import { router } from "expo-router";
 
 const Home = () => {
   const { user } = useUser();
@@ -25,7 +26,14 @@ const Home = () => {
   const [hasPermissions, setHasPermission] = useState(false);
   const handleSignOut = () => {};
   const isloading = false;
-  const handleDestinationPress = () => {};
+  const handleDestinationPress = (location: {
+    longitude: number;
+    latitude: number;
+    address: string;
+  }) => {
+    setDestinationLocation(location);
+    router.push("/(root)/find-ride");
+  };
 
   useEffect(() => {
     const requestLocation = async () => {
